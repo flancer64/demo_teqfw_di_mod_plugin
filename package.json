@@ -22,7 +22,5 @@
     "url": "https://github.com/flancer64/demo_teqfw_di_mod_plugin/issues"
   },
   "homepage": "https://github.com/flancer64/demo_teqfw_di_mod_plugin#readme",
-  "dependencies": {
-    "is-module": "^1.0.0"
-  }
+  "dependencies": {}
 }
