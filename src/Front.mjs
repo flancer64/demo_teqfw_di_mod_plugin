@@ -1,6 +1,15 @@
-// frontend code cannot use traditional npm packages
-export default function Demo_Main_Plugin_Front(spec) {
-    // get module's default export (function)
-    const fnShared = spec['Demo_Main_Plugin_Shared#'];
-    return {title: fnShared('plugin front')};
+// frontend code cannot use traditional npm packages but can use browser API
+export default class Demo_Main_Plugin_Front {
+    title
+
+    constructor(spec) {
+        // get module's default export (function)
+        const fnShared = spec['Demo_Main_Plugin_Shared#'];
+        this.title = fnShared('plugin front')
+    };
+
+    out(selector) {
+        const elOut = self.document.querySelector(selector);
+        elOut.innerHTML = JSON.stringify({frontPlugin: this.title});
+    }
 }

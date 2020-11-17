@@ -1,2 +1,5 @@
 # demo_teqfw_di_mod_plugin
-Plugin module for demo app (@flancer64/demo_teqfw_di).
+
+Main module being used in '[demo_teqfw_di](https://github.com/flancer64/demo_teqfw_di)' app.
+
+[@teqfw/di](https://github.com/teqfw/di) library is used to create and inject objects.
